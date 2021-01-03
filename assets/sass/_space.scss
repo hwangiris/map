@@ -1,0 +1,173 @@
+$value: 0, 5, 10, 20, 30, 40, 50;
+@for $i from 1 through length($value) {
+    .m#{nth($value,$i)} {
+        margin: #{nth($value, $i)}px !important;
+    }
+    .ml#{nth($value,$i)},
+    .mx#{nth($value,$i)} {
+        margin-left: #{nth($value, $i)}px !important;
+    }
+    .mr#{nth($value,$i)},
+    .mx#{nth($value,$i)} {
+        margin-right: #{nth($value, $i)}px !important;
+    }
+    .mt#{nth($value,$i)},
+    .my#{nth($value,$i)} {
+        margin-top: #{nth($value, $i)}px !important;
+    }
+    .mb#{nth($value,$i)},
+    .my#{nth($value,$i)} {
+        margin-bottom: #{nth($value, $i)}px !important;
+    }
+}
+
+@for $i from 1 through length($value) {
+    .p#{nth($value,$i)} {
+        padding: #{nth($value, $i)}px !important;
+    }
+    .pl#{nth($value,$i)},
+    .px#{nth($value,$i)} {
+        padding-left: #{nth($value, $i)}px !important;
+    }
+    .pr#{nth($value,$i)},
+    .px#{nth($value,$i)} {
+        padding-right: #{nth($value, $i)}px !important;
+    }
+    .pt#{nth($value,$i)},
+    .py#{nth($value,$i)} {
+        padding-top: #{nth($value, $i)}px !important;
+    }
+    .pb#{nth($value,$i)},
+    .py#{nth($value,$i)} {
+        padding-bottom: #{nth($value, $i)}px !important;
+    }
+}
+
+@include breakpoint(1024px) {
+    @for $i from 1 through length($value) {
+        .m-d-#{nth($value,$i)} {
+            margin: #{nth($value, $i)}px !important;
+        }
+        .ml-d-#{nth($value,$i)},
+        .mx-d-#{nth($value,$i)} {
+            margin-left: #{nth($value, $i)}px !important;
+        }
+        .mr-d-#{nth($value,$i)},
+        .mx-d-#{nth($value,$i)} {
+            margin-right: #{nth($value, $i)}px !important;
+        }
+        .mt-d-#{nth($value,$i)},
+        .my-d-#{nth($value,$i)} {
+            margin-top: #{nth($value, $i)}px !important;
+        }
+        .mb-d-#{nth($value,$i)},
+        .my-d-#{nth($value,$i)} {
+            margin-bottom: #{nth($value, $i)}px !important;
+        }
+        .p-d-#{nth($value,$i)} {
+            padding: #{nth($value, $i)}px !important;
+        }
+        .pl-d-#{nth($value,$i)},
+        .px-d-#{nth($value,$i)} {
+            padding-left: #{nth($value, $i)}px !important;
+        }
+        .pr-d-#{nth($value,$i)},
+        .px-d-#{nth($value,$i)} {
+            padding-right: #{nth($value, $i)}px !important;
+        }
+        .pt-d-#{nth($value,$i)},
+        .py-d-#{nth($value,$i)} {
+            padding-top: #{nth($value, $i)}px !important;
+        }
+        .pb-d-#{nth($value,$i)},
+        .py-d-#{nth($value,$i)} {
+            padding-bottom: #{nth($value, $i)}px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    @for $i from 1 through length($value) {
+        .m-p-#{nth($value,$i)} {
+            margin: #{nth($value, $i)}px !important;
+        }
+        .ml-p-#{nth($value,$i)},
+        .mx-p-#{nth($value,$i)} {
+            margin-left: #{nth($value, $i)}px !important;
+        }
+        .mr-p-#{nth($value,$i)},
+        .mx-p-#{nth($value,$i)} {
+            margin-right: #{nth($value, $i)}px !important;
+        }
+        .mt-p-#{nth($value,$i)},
+        .my-p-#{nth($value,$i)} {
+            margin-top: #{nth($value, $i)}px !important;
+        }
+        .mb-p-#{nth($value,$i)},
+        .my-p-#{nth($value,$i)} {
+            margin-bottom: #{nth($value, $i)}px !important;
+        }
+        .p-p-#{nth($value,$i)} {
+            padding: #{nth($value, $i)}px !important;
+        }
+        .pl-p-#{nth($value,$i)},
+        .px-p-#{nth($value,$i)} {
+            padding-left: #{nth($value, $i)}px !important;
+        }
+        .pr-p-#{nth($value,$i)},
+        .px-p-#{nth($value,$i)} {
+            padding-right: #{nth($value, $i)}px !important;
+        }
+        .pt-p-#{nth($value,$i)},
+        .py-p-#{nth($value,$i)} {
+            padding-top: #{nth($value, $i)}px !important;
+        }
+        .pb-p-#{nth($value,$i)},
+        .py-p-#{nth($value,$i)} {
+            padding-bottom: #{nth($value, $i)}px !important;
+        }
+    }
+}
+
+@include breakpoint(max-width 767px) {
+    @for $i from 1 through length($value) {
+        .m-m-#{nth($value,$i)} {
+            margin: #{nth($value, $i)}px !important;
+        }
+        .ml-m-#{nth($value,$i)},
+        .mx-m-#{nth($value,$i)} {
+            margin-left: #{nth($value, $i)}px !important;
+        }
+        .mr-m-#{nth($value,$i)},
+        .mx-m-#{nth($value,$i)} {
+            margin-right: #{nth($value, $i)}px !important;
+        }
+        .mt-m-#{nth($value,$i)},
+        .my-m-#{nth($value,$i)} {
+            margin-top: #{nth($value, $i)}px !important;
+        }
+        .mb-m-#{nth($value,$i)},
+        .my-m-#{nth($value,$i)} {
+            margin-bottom: #{nth($value, $i)}px !important;
+        }
+        .p-m-#{nth($value,$i)} {
+            padding: #{nth($value, $i)}px !important;
+        }
+        .pl-m-#{nth($value,$i)},
+        .px-m-#{nth($value,$i)} {
+            padding-left: #{nth($value, $i)}px !important;
+        }
+        .pr-m-#{nth($value,$i)},
+        .px-m-#{nth($value,$i)} {
+            padding-right: #{nth($value, $i)}px !important;
+        }
+        .pt-m-#{nth($value,$i)},
+        .py-m-#{nth($value,$i)} {
+            padding-top: #{nth($value, $i)}px !important;
+        }
+        .pb-m-#{nth($value,$i)},
+        .py-m-#{nth($value,$i)} {
+            padding-bottom: #{nth($value, $i)}px !important;
+        }
+    }
+}

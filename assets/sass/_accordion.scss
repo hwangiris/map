@@ -1,0 +1,76 @@
+.accordion {
+    .accordion-item {
+        + .accordion-item {
+            border-top: 1px solid #fff;
+        }
+        .accordion-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 1.25rem;
+            background-color: #CEAD69;
+            cursor: pointer;
+            @include transition(background 0.3s);
+            .icon-down {
+                @include transition(transform 0.3s);
+            }
+            &.active {
+                background-color: #40D4AB;
+                .icon-down {
+                    @include rotate(180deg);
+                }
+            }
+            @include breakpoint(1024px) {
+                font-size: 1.75rem;
+                &:hover {
+                    background-color: #40D4AB;
+                }
+            }
+        }
+        .accordion-body {
+            display: none;
+            ul {
+                @include list(20px 30px, 0 20px 0 0, none);
+                height: 150px;
+                overflow: hidden scroll;
+                &::-webkit-scrollbar-track {
+                    background-color: #EEDEBD;
+                    @include border-radius(10px);
+                }
+                &::-webkit-scrollbar {
+                    width: 8px;
+                    background-color: #EEDEBD;
+                    @include border-radius(10px);
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #CEAD69;
+                    @include border-radius(10px);
+                }
+                li {
+                    display: flex;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #F2F2F2;
+                    span.travel-agency {
+                        display: block;
+                        width: 80px;
+                        color: #808080;
+                        @include breakpoint(1024px) {
+                            width: 140px;
+                        }
+                    }
+                    a {
+                        display: block;
+                        width: calc(100% - 80px);
+                        padding-left: 20px;
+                        color: #CEAD69;
+                        text-decoration: underline;
+                        @include breakpoint(1024px) {
+                            width: calc(100% - 140px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

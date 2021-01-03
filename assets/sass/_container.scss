@@ -1,0 +1,15 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(768px) {
+        width: 680px;
+    }
+    @include breakpoint(1024px) {
+        width: 90%;
+    }
+    @include breakpoint(1200px) {
+        width: 1110px;
+    }
+}

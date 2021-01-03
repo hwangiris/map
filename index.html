@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>地圖</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="#!" class="logo">
+					<img src="assets/images/logo.png" alt="中華民國僑務委員會">
+				</a>
+				<nav>
+					<ul class="menu">
+						<li><a href="#!">回首頁</a></li>
+						<li><a href="#!">網站導覽</a></li>
+						<li><a href="#!">服務信箱</a></li>
+						<li><a href="#!">English</a></li>
+						<li><a href="#!">FAQ</a></li>
+						<li class="social">
+							<a href="#!"><img src="assets/images/youtube.svg"  width="36" alt=""></a>
+							<a href="#!"><img src="assets/images/line.svg"  width="36" alt=""></a>
+							<a href="#!"><img src="assets/images/facebook.svg"  width="36" alt=""></a>
+						</li>
+					</ul>
+					<ul class="social">
+						<li><a href="#!"><img src="assets/images/youtube.svg"  width="36" alt=""></a></li>
+						<li><a href="#!"><img src="assets/images/line.svg"  width="36" alt=""></a></li>
+						<li><a href="#!"><img src="assets/images/facebook.svg"  width="36" alt=""></a></li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<form>
+					<input type="search" name="search" id="search" placeholder="請輸入關鍵字">
+					<button type="submit"><i class="icon icon-search"></i></button>
+				</form>
+				<h1 class="my0">台灣觀光亮點</h1>
+			</div>
+			<div class="container container-flex">
+				<div id="map"></div>
+				<div class="right-column">
+					<div class="tourism-bureau">
+						<i class="icon icon-play"></i>
+						<div class="tourism-txt px20 py10">交通部觀光局</div>
+						<img src="assets/images/tourism.svg" alt="交通部觀光局">
+					</div>
+					<div id="tooltip" class="county-tooltip"></div>
+					<!-- <div id="tooltip" class="county-tooltip">
+						<div class="county-tooltip-head px20">
+							<div class="county-name">桃園市</div>
+							<div class="county-second">
+								<a class="county-share" target="_blank">立即分享</a>
+								<div id="county-tooltip-close" class="county-tooltip-close icon-close"></div>
+							</div>
+						</div>
+						<div class="county-tooltip-video">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="county-tooltip-accordion accordion">
+							<div class="accordion-item">
+								<div class="accordion-head px30 py10">
+									2020桃園觀光宣傳影片
+									<i class="icon icon-down"></i>
+								</div>
+								<div class="accordion-body">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-head px30 py10 active">
+									國內旅遊行程
+									<i class="icon icon-down"></i>
+								</div>
+								<div class="accordion-body" style="display: block;">
+									<ul>
+										<li>
+											<span class="travel-agency">dfjwoer國際旅行社</span>
+											<a class="travel-item" href="#!">桃園好行 - 農家找樂子‧職人體驗 小鎮漫遊二日</a>
+										</li>
+										<li>
+											<span class="travel-agency">jkjgfhe旅行社</span>
+											<a class="travel-item" href="#!">傳統旗袍+品茶體驗美食一日遊</a>
+										</li>
+										<li>
+											<span class="travel-agency">iuyewrgv旅行社</span>
+											<a class="travel-item" href="#!">回憶老時光‧小鎮風華三日遊</a>
+										</li>
+										<li>
+											<span class="travel-agency">dfjwoer國際旅行社</span>
+											<a class="travel-item" href="#!">桃園好行 - 農家找樂子‧職人體驗 小鎮漫遊二日</a>
+										</li>
+										<li>
+											<span class="travel-agency">jkjgfhe旅行社</span>
+											<a class="travel-item" href="#!">傳統旗袍+品茶體驗美食一日遊</a>
+										</li>
+										<li>
+											<span class="travel-agency">iuyewrgv旅行社</span>
+											<a class="travel-item" href="#!">回憶老時光‧小鎮風華三日遊</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container py30">
+				<div class="contact">
+					<p class="my-d-0 my-p-10 my-m-10">
+						瀏覽次數：7082048 | 隱私權及資訊安全宣告 | 網站使用條款及連結政策
+					</p>
+					<p class="my-d-0 my-p-10 my-m-10">
+						10055台北市徐州路五號三、十五、十六、十七樓
+					</p>
+					<p class="my-d-0 my-p-10 my-m-10">
+						3,15-17F., No.5, Xuzhou Rd., Zhongzheng Dist., Taipei City 10055, Taiwan (R.O.C.)
+					</p>
+					<p class="my-d-0 my-p-10 my-m-10">
+						為民服務專線: 886-2-2327-2600（週一至週五 08:30~17:30）‧Fax : 886-2-2341-6926‧
+					</p>
+				</div>
+				<div class="sticker">
+					<a href="#!" target="_blank" rel="noopener noreferrer">
+						<img src="assets/images/oversea-card-100.jpg" alt="">
+					</a>
+					<a href="#!" target="_blank" rel="noopener noreferrer">
+						<img src="assets/images/ocac-v-100.jpg" alt="">
+					</a>
+					<a href="#!" target="_blank" rel="noopener noreferrer">
+						<img src="assets/images/ocac-qr-100.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="container-fluid px20 py10">
+				Copyright © 中華民國僑務委員會・Overseas Community Affairs Council, Republic of China (Taiwan)
+			</div>
+		</footer>
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/d3.v4.min.js"></script>
+		<script src="assets/js/topojson.v1.min.js"></script>
+		<script src="assets/js/map.js?v2"></script>
+		<script src="assets/js/customize.js"></script>
+	</body>
+</html>

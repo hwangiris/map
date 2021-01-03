@@ -1,0 +1,204 @@
+@import '_general.scss';
+@import '_mixin.scss';
+@import '_variable.scss';;
+@import '_space.scss';
+@import '_icon.scss';
+@import '_container.scss';
+@import '_header.scss';
+@import '_footer.scss';
+@import '_accordion.scss';
+@import '_embed.scss';
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F9F9F9;
+    .container {
+        position: relative;
+        &.container-flex {
+            @include breakpoint(768px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    h1 {
+        display: table;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.4em;
+        padding-bottom: 0.5rem;
+        color: #CEAD69;
+        font-size: 1.75rem;
+        text-align: center;
+        letter-spacing: 0.4em;
+        line-height: 1.25;
+        @include breakpoint(1024px) {
+            padding-bottom: 1rem;
+            font-size: 3rem;
+        }
+        &::before {
+            @include beforeafter('', block);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: calc(100% - 0.8em);
+            height: 4px;
+            background-color: #CEAD69;
+            @include translateX(-50%);
+            @include breakpoint(1024px) {
+                height: 8px;
+            }
+        }
+    }
+    form {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: table;
+        font-size: 1rem;
+        @include breakpoint(max-width 1199px) {
+            display: none;
+        }
+        input[type*='search'] {
+            width: 260px;
+            font-size: 1rem;
+            padding: 0 60px 0 20px;
+            line-height: 2.375;
+            border: 1px solid #CEAD69;
+            @include border-radius(20px);
+            outline: 0;
+            @include box-sizing(border-box);
+        }
+        button[type='submit'] {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            padding: 0.375rem 0;
+            background-color: transparent;
+            border-width: 0;
+        }
+    }
+    #map {
+        @include breakpoint(768px) {
+            width: calc(100% - 185px);
+        }
+        @include breakpoint(1200px) {
+            width: 50%;
+        }
+        @include breakpoint(max-width 767px) {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        svg {
+            path {
+                fill: #C8D9E8;
+                stroke: #fff;
+                stroke-width: 1.25;
+                &.active {
+                    fill: #40D4AB;
+                }
+            }
+        }
+    }
+    .right-column {
+        @include breakpoint(768px) {
+            width: 185px;
+        }
+        @include breakpoint(1200px) {
+            position: relative;
+            width: 50%;
+        }
+    }
+    .tourism-bureau {
+        position: relative;
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        .icon-play {
+            cursor: pointer;
+        }
+        .tourism-txt {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            font-size: 1.5rem;
+            background-color: #40D4AB;
+            @include border-radius(0.75rem 0.75rem 0 0);
+            @include breakpoint(max-width 1199px) {
+                display: none;
+            }
+            &::before {
+                @include beforeafter('', block);
+                position: absolute;
+                left: 0;
+                bottom: -7px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 7px 0 7px 12.1px;
+                border-color: transparent transparent transparent #40D4AB;
+            }
+        }
+        img {
+            display: block;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 185px;
+            @include breakpoint(1200px) {
+                width: 255px;
+            }
+        }
+    }
+    .county-tooltip {
+        display: block;
+        top: 50%;
+        right: 0;
+        background-color: rgba(#fff, 0.9);
+        @include border-radius(20px);
+        @include box-shadow(10px 10px 20px rgba(#000, 0.1));
+        @include translateY(-50%);
+        z-index: 1;
+        overflow: scroll;
+        @include breakpoint(1024px) {
+            position: absolute;
+            left: 40px;
+        }
+        @include breakpoint(max-width 1023px) {
+            position: fixed;
+            left: 20px;
+            right: 20px;
+        }
+        .county-tooltip-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            .county-name {
+                color: #666;
+                font-size: 2rem;
+                letter-spacing: 0.12em;
+            }
+            .county-second {
+                display: flex;
+                align-items: center;
+            }
+            .county-share {
+                padding: 0.5rem 1rem;
+                margin-right: 30px;
+                color: #fff;
+                font-size: 1.125rem;
+                background-color: #CEAD69;
+                @include border-radius(40px);
+            }
+            .county-tooltip-close {
+                background-color: #E2E2E2;
+                &:before, &:after {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

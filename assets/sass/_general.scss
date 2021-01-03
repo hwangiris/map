@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import "Compass";
+@import "breakpoint";
+@import 'normalize-version';
+@import 'normalize/html5';
+@import 'normalize/base';
+@import 'normalize/links';
+// @import 'normalize/typography';
+@import 'normalize/embeds';
+@import 'normalize/groups';
+@import 'normalize/forms';
+@import 'normalize/tables';
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap');
+ul,
+ol {
+    padding-left: 1.15em;
+}
+
+.upper-latin {
+    list-style-type: upper-alpha;
+}
+
+.decimal {
+    list-style-type: decimal;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.number__brackets li {
+    position: relative;
+    padding-left: 2em;
+    line-height: 1.5;
+    span {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.list-reset {
+    @extend %list-reset;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.flex {
+    @include breakpoint(768px) {
+        &-md {
+            display: flex;
+        }
+    }
+    @include breakpoint(1024px) {
+        &-lg {
+            display: flex;
+        }
+    }
+    @include breakpoint(1280px) {
+        &-xl {
+            display: flex;
+        }
+    }
+}
+
+html {
+    min-height: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+}
+
+.sr-only {
+    position: absolute!important;
+    padding: 0!important;
+    margin: 0!important;
+    width: 0!important;
+    height: 0!important;
+    font-size: 0!important;
+}
+
+*,
+*::before,
+*::after {
+    @include box-sizing(border-box);
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    @include breakpoint(1024px) {
+        font-family: 'Roboto', 'Noto Sans TC', '思源黑體 TC', '思源黑體 TW', '思源黑體', '微軟正黑體', '繁黑體', 'Microsoft JhengHei', 'Lato', 'Arial', 'Segoe UI Emoji', 'Segoe UI Symbol', '新細明體', sans-serif;
+        font-display: swap;
+    }
+    &.opened {
+        overflow: hidden;
+    }
+}
+
+.serif {
+    font-family: 'Noto Serif TC', '思源宋體 TC', '思源宋體 TW', '思源宋體', serif;
+}
+
+a, button.btn {
+    text-decoration: none;
+    @include breakpoint(1024px) {
+        @include transition(color .2s, border .2s, background .2s);
+    }
+}
+
+img {
+    display: block;
+}
+
+.clearfix,
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    clear: both;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.desktop {
+    @include breakpoint(max-width 1023px) {
+        display: none;
+    }
+}
+
+.mobile {
+    @include breakpoint(1024px) {
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+.icon-search {
+    position: relative;
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
+    &:before, &:after {
+        @include beforeafter('', block);
+        position: absolute;
+    }
+    &:before {
+        top: 0.25em;
+        left: 0.25em;
+        width: 65%;
+        height: 65%;
+        border: 2px solid #CEAD69;
+        @include border-radius(50%);
+    }
+    &:after {
+        bottom: 0.25em;
+        right: 0.25em;
+        width: 25%;
+        height: 2px;
+        background-color: #CEAD69;
+        transform-origin: 100% 50%;
+        @include rotate(45deg);
+    }
+}
+.icon-close {
+    position: relative;
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    @include border-radius(50%);
+    @include rotate(45deg);
+    cursor: pointer;
+    &:before, &:after {
+        @include beforeafter('', block);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+    }
+    &:before {
+        width: 1rem;
+        height: 2px;
+    }
+    &:after {
+        width: 2px;
+        height: 1rem;
+    }
+}
+.icon-play {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #CEAD69;
+    @include border-radius(50%);
+    &::before {
+        @include beforeafter('', block);
+        position: absolute;
+        top: 50%;
+        left: 57.5%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 17.3px;
+        border-color: transparent transparent transparent #CEAD69;
+        @include translate(-50%, -50%);
+    }
+}
+.icon-down {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    &::after {
+        @include beforeafter('', block);
+        position: absolute;
+        top: 0.125em;
+        left: 0.5em;
+        width: 1em;
+        height: 1em;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        @include rotate(225deg);
+    }
+}

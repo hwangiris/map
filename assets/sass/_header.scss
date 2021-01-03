@@ -1,0 +1,173 @@
+header {
+    position: relative;
+    background-color: #CEAD69;
+    z-index: 1;
+    .container {
+        position: relative;
+        &::after {
+            @include clear();
+            @include breakpoint(max-width 767px) {
+                height: 60px;
+            }
+        }
+    }
+    a {
+        display: block;
+        img {
+            display: block;
+        }
+        &.logo {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            padding: 1.125rem 1.25rem;
+            background-color: #fff;
+            @include border-radius(0 0 0.75rem 0.75rem);
+            box-shadow: 10px 10px 40px rgba(#000, 0.05);
+            @include breakpoint(1024px) {
+                padding: 1.5rem;
+            }
+            img {
+                height: 35px;
+                @include breakpoint(768px) {
+                    height: 45px;
+                }
+            }
+        }
+    }
+    ul {
+        @include list(0, 0, none);
+        font-size: 0;
+        li {
+            display: inline-block;
+            a {
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 32px;
+        height: 26px;
+        @include translateY(-50%);
+        z-index: 1;
+        @include breakpoint(768px) {
+            display: none;
+        }
+        span {
+            display: block;
+            height: 2px;
+            background-color: #fff;
+            @include transition(all 0.3s);
+            + span {
+                margin-top: 10px;
+            }
+        }
+        &.active {
+            span {
+                + span {
+                    margin-top: 0;
+                }
+                &:nth-child(1) {
+                    @include transform(rotate(45deg) translate(7.5px, 7.5px));
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    @include transform(rotate(-45deg) translate(-6.5px, 5.5px));
+                }
+            }
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        line-height: 1;
+        @include breakpoint(768px) {
+            float: right;
+            width: calc(100% - 300px);
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        @include breakpoint(max-width 767px) {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 65px;
+            padding-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            background-color: rgba(#CEAD69, 0.9);
+            z-index: 1;
+        }
+        ul {
+            @include breakpoint(max-width 767px) {
+                width: 100%;
+            }
+            li {
+                padding-left: 7px;
+                padding-right: 7px;
+                @include breakpoint(1200px) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            &.menu {
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                li {
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        margin: 10px 0;
+                    }
+                    @include breakpoint(768px) {
+                        border-right: 1px solid #fff;
+                        &:nth-last-child(2), &:last-child {
+                            border-right-width: 0;
+                        }
+                    }
+                    @include breakpoint(max-width 767px) {
+                        width: 100%;
+                        border-bottom: 1px solid rgba(#fff, 0.5);
+                    }
+                    &.social {
+                        display: none;
+                        width: calc(56px * 3);
+                        align-items: center;
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            display: flex;
+                        }
+                    }
+                    a {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        @include breakpoint(max-width 767px) {
+                            line-height: 4;
+                            text-align: center;
+                        }
+                    }    
+                }
+            }
+            &.social {
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    display: none;
+                }
+                @include breakpoint(max-width 767px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;                
+                }
+            }
+        }
+    }
+}

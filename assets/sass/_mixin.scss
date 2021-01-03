@@ -1,0 +1,52 @@
+%before-after {
+    content: '';
+    display: block;
+}
+
+@mixin text-fill-color($color) {
+    -moz-text-fill-color: $color;
+    -ms-text-fill-color: $color;
+    -webkit-text-fill-color: $color;
+    text-fill-color: $color;
+}
+
+@mixin beforeafter($content, $display) {
+    content: $content;
+    display: $display;
+}
+
+@mixin clear {
+    @include beforeafter('', block);
+    clear: both;
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin lineclamp($line) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin list($margin, $padding, $style) {
+    margin: $margin;
+    padding: $padding;
+    list-style: $style;
+}
+
+%list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

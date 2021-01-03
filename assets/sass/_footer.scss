@@ -1,0 +1,71 @@
+footer {
+    font-size: 0.875rem;
+    background-color: #F2F2F2;
+    .container {
+        color: #808080;
+        @include breakpoint(1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @include breakpoint(1200px) {
+            line-height: 2;
+        }
+        .sticker {
+            font-size: 0;
+            @include breakpoint(max-width 413px) {
+                margin-top: 10px;
+            }
+            @media screen and (max-width: 1023px) and (min-width: 414px) {
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 1023px) and (min-width: 414px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @include breakpoint(1024px) {
+                width: 450px;
+                margin-left: 2rem;
+            }
+            a {
+                display: inline-block;
+                padding: 5px;
+                width: 120px;
+                background-color: #fff;
+                @include border-radius(1rem);
+                overflow: hidden;
+                @media screen and (max-width: 1023px) and (min-width: 414px) {
+                    width: calc( (100% - 40px) / 3 );
+                }
+                @include breakpoint(max-width 413px) {
+                    width: calc( (100% - 20px) / 2 );
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    &:nth-child(2n-1) {
+                        margin-left: 0;
+                    }
+                }
+                + a {
+                    @include breakpoint(414px) {
+                        margin-left: 20px;
+                    }
+                    @include breakpoint(1024px) {
+                        margin-left: 1rem;
+                    }
+                    @include breakpoint(1200px) {
+                        margin-left: 2rem;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .container-fluid {
+        color: #fff;
+        text-align: center;
+        background-color: #7A6E54;
+    }
+}
