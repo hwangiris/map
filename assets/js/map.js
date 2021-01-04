@@ -100,30 +100,10 @@ $(function () {
 			var filtered_country_name = counties.filter(function (item) {
 				return item.properties.name.toString() == enter_country;
 			});
-			var html_text =
-				(d.properties.kmt
-					? "<li>國民黨<span>" + d.properties.kmt + "%</span></li>"
-					: "") +
-				(d.properties.ddp
-					? "<li>民進黨<span>" + d.properties.ddp + "%</span></li>"
-					: "") +
-				(d.properties.mg
-					? "<li>民國黨<span>" + d.properties.mg + "%</span></li>"
-					: "") +
-				(d.properties.none
-					? "<li>無黨籍<span>" + d.properties.none + "%</span></li>"
-					: "");
 			div.transition().duration(200).style("opacity", 1);
 			d3.selectAll(".county").classed("active", false);
 			d3.select(this).classed("active", true);
-			// div.html(
-			// 	"<div class='info-text'><div class='name'>" +
-			// 	filtered_country_name[0].properties.name +
-			// 	"</div>" +
-			// 	"<ul class='vote-text'>" +
-			// 	html_text +
-			// 	"</ul></div>"
-			// );
+
 			var newslist = "";
 			for (let idx = 0; idx < filtered_country[0].travel.length; idx++) {
 				newslist += "<li><span class='travel-agency'>" + filtered_country[0].travel[idx].travel_agency + "</span><a class='travel-item' href='" + filtered_country[0].travel[idx].travel_link + "'>" + filtered_country[0].travel[idx].travel_title + "</a></li>"
