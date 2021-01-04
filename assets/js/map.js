@@ -57,16 +57,6 @@ $(function () {
 			.on("start", function () {
 				div.transition().duration(400).style("display", 'block');
 			});
-			// .on("drag", function (d, i) {
-			// 	this.x = this.x || 0;
-			// 	this.y = this.y || 0;
-			// 	this.x += d3.event.dx;
-			// 	this.y += d3.event.dy;
-			// 	var k = height / vWidth;
-			// 	d3.select(this).attr(
-			// 		"transform", "translate(" + center[0] + "," + center[1] + ")scale(" + k + ")translate(" + -x + "," + -y + ")" + "translate(" + this.x / k + "," + this.y / k + ")"
-			// 	);
-			// });
 		var g_feature = svg_feature.append("g").call(dragcontainer);
 		var countyPaths_feature = g_feature
 			.selectAll(".county")
@@ -140,8 +130,7 @@ $(function () {
 				"<div class='county-second'><a class='county-share' target='_blank'>立即分享</a>" +
 				"<div id='county-tooltip-close' class='county-tooltip-close icon-close'></div>" +
 				"</div></div>" +
-				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div></div>" +
-				"<p>" + filtered_country[0].candidates + "</p>"
+				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div></div>"
 			);
 		}
 	}
