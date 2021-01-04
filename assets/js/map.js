@@ -124,14 +124,28 @@ $(function () {
 			// 	html_text +
 			// 	"</ul></div>"
 			// );
+			var newslist = "";
+			for (let idx = 0; idx < filtered_country[0].travel.length; idx++) {
+				newslist += "<li><span class='travel-agency'>" + filtered_country[0].travel[idx].travel_agency + "</span><a class='travel-item' href='" + filtered_country[0].travel[idx].travel_link + "'>" + filtered_country[0].travel[idx].travel_title + "</a></li>"
+			}
 			div.html(
 				"<div class='county-tooltip-head px20'>" +
 				"<div class='county-name'>" + filtered_country_name[0].properties.name + "</div>" +
-				"<div class='county-second'><a class='county-share' target='_blank'>立即分享</a>" +
+				"<div class='county-second'><a class='county-share' target='_blank'>立即分享<img src='assets/images/share.svg' alt='share'></a>" +
 				"<div id='county-tooltip-close' class='county-tooltip-close icon-close'></div>" +
 				"</div></div>" +
-				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div></div>"
+				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div>" +
+				"<div class='county-tooltip-accordion accordion'>" +
+				"<div class='accordion-item'><div class='accordion-head px30 py10'>" + filtered_country[0].video_title + 
+				"<i class='icon icon-down'></i></div><div class='accordion-body'><div class='embed-responsive embed-responsive-16by9'>" +
+				"</div></div></div>" +
+				"<div class='accordion-item'><div class='accordion-head px30 py10 active'>" + filtered_country[0].travel_title + 
+				"<i class='icon icon-down'></i></div>" +
+				"<div class='accordion-body' style='display: block;'><ul>" + newslist +
+				"</ul></div></div></div>"
 			);
+			closeTooltips();
+			accordion();
 		}
 	}
 });

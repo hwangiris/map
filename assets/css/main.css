@@ -2482,6 +2482,8 @@ main .county-tooltip .county-tooltip-head .county-second {
   align-items: center;
 }
 main .county-tooltip .county-tooltip-head .county-share {
+  display: flex;
+  align-items: center;
   padding: 0.5rem 1rem;
   margin-right: 30px;
   color: #fff;
@@ -2490,6 +2492,12 @@ main .county-tooltip .county-tooltip-head .county-share {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
+}
+main .county-tooltip .county-tooltip-head .county-share img {
+  margin-left: 0.25rem;
+  height: 1.125rem;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 main .county-tooltip .county-tooltip-head .county-tooltip-close {
   background-color: #E2E2E2;

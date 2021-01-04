@@ -186,12 +186,19 @@ main {
                 align-items: center;
             }
             .county-share {
+                display: flex;
+                align-items: center;
                 padding: 0.5rem 1rem;
                 margin-right: 30px;
                 color: #fff;
                 font-size: 1.125rem;
                 background-color: #CEAD69;
                 @include border-radius(40px);
+                img {
+                    margin-left: 0.25rem;
+                    height: 1.125rem;
+                    @include opacity(0.8);
+                }
             }
             .county-tooltip-close {
                 background-color: #E2E2E2;

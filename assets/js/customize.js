@@ -7,16 +7,22 @@ $(function () {
     $('.hamburger').click(function(){
         $(this).toggleClass('active');
         $('nav').slideToggle();
-    })
-    $('#county-tooltip-close').on("click", function(){
-        $('#tooltip').hide();
-    })
+    });
+});
+
+function accordion() {
     $('.accordion-item').each(function(){
         $(this).children('.accordion-head').click(function(){
             $(this).parent('.accordion-item').siblings().children('.accordion-head').removeClass('active');
             $(this).parent('.accordion-item').siblings().children('.accordion-body').slideUp();
             $(this).toggleClass('active');
             $(this).siblings('.accordion-body').slideToggle();
-        })
-    })
-});
+        });
+    });
+};
+
+function closeTooltips() {
+    $('#county-tooltip-close').click(function(){
+        $('#tooltip').hide().html('');
+    });
+};

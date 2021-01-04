@@ -1,8 +1,10 @@
 [
 	{
 		"county": "基隆市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020基隆市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -38,8 +40,10 @@
 	},
 	{
 		"county": "台北市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020基隆市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -75,8 +79,10 @@
 	},
 	{
 		"county": "新北市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020新北市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -112,8 +118,10 @@
 	},
 	{
 		"county": "桃園市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020桃園市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -149,8 +157,10 @@
 	},
 	{
 		"county": "新竹市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020新竹市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -186,8 +196,10 @@
 	},
 	{
 		"county": "新竹縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020新竹縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -223,8 +235,10 @@
 	},
 	{
 		"county": "苗栗縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020苗栗縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -260,8 +274,10 @@
 	},
 	{
 		"county": "台中市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020台中市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -297,8 +313,10 @@
 	},
 	{
 		"county": "彰化縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020彰化縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -334,8 +352,10 @@
 	},
 	{
 		"county": "南投縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020南投縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -371,8 +391,10 @@
 	},
 	{
 		"county": "雲林縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020雲林縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -408,8 +430,10 @@
 	},
 	{
 		"county": "嘉義市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020嘉義市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -445,8 +469,10 @@
 	},
 	{
 		"county": "嘉義縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020嘉義縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -482,8 +508,10 @@
 	},
 	{
 		"county": "台南市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020台南市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -519,8 +547,10 @@
 	},
 	{
 		"county": "高雄市",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020高雄市觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -556,8 +586,10 @@
 	},
 	{
 		"county": "屏東縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020屏東縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -593,8 +625,10 @@
 	},
 	{
 		"county": "宜蘭縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020宜蘭縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -630,8 +664,10 @@
 	},
 	{
 		"county": "花蓮縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020花蓮縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -667,8 +703,10 @@
 	},
 	{
 		"county": "台東縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020台東縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -704,8 +742,10 @@
 	},
 	{
 		"county": "澎湖縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020澎湖縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -741,8 +781,10 @@
 	},
 	{
 		"county": "金門縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020金門縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
@@ -778,8 +820,10 @@
 	},
 	{
 		"county": "連江縣",
-		"visual": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
-		"video": "<iframe  src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"visual": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"video_title": "2020連江縣觀光宣傳影片",
+		"video": "<iframe src=\"https://www.youtube.com/embed/G6Kwys-NdMQ?rel=0\" allowfullscreen></iframe>",
+		"travel_title": "國內旅遊行程",
 		"travel": [
 			{
 				"travel_agency": "dfjwoer國際旅行社",
