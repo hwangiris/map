@@ -2423,6 +2423,9 @@ main .tourism-bureau .tourism-txt::before {
   border-width: 7px 0 7px 12.1px;
   border-color: transparent transparent transparent #40D4AB;
 }
+main .tourism-bureau .tourism-txt:hover {
+  background-color: #2ecca1;
+}
 main .tourism-bureau img {
   display: block;
   margin-top: 30px;

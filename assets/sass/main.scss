@@ -140,6 +140,9 @@ main {
                 border-width: 7px 0 7px 12.1px;
                 border-color: transparent transparent transparent #40D4AB;
             }
+            &:hover {
+                background-color: darken(#40D4AB, 5%);
+            }
         }
         img {
             display: block;

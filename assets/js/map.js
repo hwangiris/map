@@ -117,7 +117,7 @@ $(function () {
 				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div>" +
 				"<div class='county-tooltip-accordion accordion'>" +
 				"<div class='accordion-item'><div class='accordion-head px30 py10'>" + filtered_country[0].video_title +
-				"<i class='icon icon-down'></i></div><div class='accordion-body'><div class='embed-responsive embed-responsive-16by9'>" +
+				"<i class='icon icon-down'></i></div><div class='accordion-body'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].video +
 				"</div></div></div>" +
 				"<div class='accordion-item'><div class='accordion-head px30 py10 active'>" + filtered_country[0].travel_title +
 				"<i class='icon icon-down'></i></div>" +
