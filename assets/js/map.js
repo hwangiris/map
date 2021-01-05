@@ -21,11 +21,11 @@ $(function () {
 	var zoom_time = 1000;
 	var path = d3.geoPath();
 	var svg_feature = d3
-	.select("#map")
-	.append("svg")
-	.attr("class", "maps")
-	.attr("width", width)
-	.attr("height", height);
+		.select("#map")
+		.append("svg")
+		.attr("class", "maps")
+		.attr("width", width)
+		.attr("height", height);
 	var div = d3.select("#tooltip").style("display", 'none');
 	d3.queue()
 		.defer(d3.json, "assets/js/tw-county-topo.json")
@@ -116,15 +116,18 @@ $(function () {
 				"</div></div>" +
 				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div>" +
 				"<div class='county-tooltip-accordion accordion'>" +
-				"<div class='accordion-item'><div class='accordion-head px30 py10'>" + filtered_country[0].video_title + 
+				"<div class='accordion-item'><div class='accordion-head px30 py10'>" + filtered_country[0].video_title +
 				"<i class='icon icon-down'></i></div><div class='accordion-body'><div class='embed-responsive embed-responsive-16by9'>" +
 				"</div></div></div>" +
-				"<div class='accordion-item'><div class='accordion-head px30 py10 active'>" + filtered_country[0].travel_title + 
+				"<div class='accordion-item'><div class='accordion-head px30 py10 active'>" + filtered_country[0].travel_title +
 				"<i class='icon icon-down'></i></div>" +
 				"<div class='accordion-body' style='display: block;'><ul>" + newslist +
 				"</ul></div></div></div>"
 			);
-			closeTooltips();
+		    $('#county-tooltip-close').click(function(){
+		        $('#tooltip').hide().html('');
+				d3.selectAll(".county").classed("active", false);
+		    });
 			accordion();
 		}
 	}

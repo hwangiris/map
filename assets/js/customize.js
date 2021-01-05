@@ -20,9 +20,3 @@ function accordion() {
         });
     });
 };
-
-function closeTooltips() {
-    $('#county-tooltip-close').click(function(){
-        $('#tooltip').hide().html('');
-    });
-};
