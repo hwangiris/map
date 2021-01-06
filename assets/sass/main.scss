@@ -82,6 +82,7 @@ main {
     }
     #map {
         position: relative;
+        z-index: 2;
         @include breakpoint(768px) {
             width: calc(100% - 185px);
         }
@@ -199,6 +200,7 @@ main {
             display: none;
         }
         &.hualien, &.yilan, &.taitung {
+            @include border-radius(0.75rem 0.75rem 0.75rem 0);
             @include translateX(150%);
             &::before {
                 left: 0;

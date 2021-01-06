@@ -2398,6 +2398,7 @@ main form button[type='submit'] {
 }
 main #map {
   position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   main #map {
@@ -2536,6 +2537,9 @@ main .county-name-tooltip.hidden {
   display: none;
 }
 main .county-name-tooltip.hualien, main .county-name-tooltip.yilan, main .county-name-tooltip.taitung {
+  -moz-border-radius: 0.75rem 0.75rem 0.75rem 0;
+  -webkit-border-radius: 0.75rem;
+  border-radius: 0.75rem 0.75rem 0.75rem 0;
   -moz-transform: translateX(150%);
   -ms-transform: translateX(150%);
   -webkit-transform: translateX(150%);

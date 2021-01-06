@@ -57,6 +57,16 @@ $(function () {
 			.drag()
 			.on("start", function () {
 				div.transition().duration(400).style("display", 'block');
+			// })
+			// .on("drag", function (d, i) {
+			// 	this.x = this.x || 0;
+			// 	this.y = this.y || 0;
+			// 	this.x += d3.event.dx;
+			// 	this.y += d3.event.dy;
+			// 	var k = height / vWidth;
+			// 	d3.select(this).attr(
+			// 		"transform", "translate(" + center[0] + "," + center[1] + ")scale(" + k + ")translate(" + -x + "," + -y + ")" + "translate(" + this.x / k + "," + this.y / k + ")"
+			// 	);
 			});
 		var g_feature = svg_feature.append("g").call(dragcontainer);
 		var countyPaths_feature = g_feature
