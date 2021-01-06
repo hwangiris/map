@@ -11,6 +11,13 @@ footer {
         @include breakpoint(1200px) {
             line-height: 2;
         }
+        a {
+            color: #808080;
+            &:hover {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
         .sticker {
             font-size: 0;
             @include breakpoint(max-width 413px) {

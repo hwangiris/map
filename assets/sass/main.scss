@@ -99,6 +99,11 @@ main {
                 &.active {
                     fill: #40D4AB;
                 }
+                &:nth-child(1), 
+                &:nth-child(2), 
+                &:nth-child(3) {
+                    stroke-width: 0;
+                }
             }
         }
     }
@@ -113,6 +118,7 @@ main {
     }
     .tourism-bureau {
         position: relative;
+        display: block;
         padding-top: 1.125rem;
         padding-bottom: 1.125rem;
         .icon-play {
@@ -122,10 +128,13 @@ main {
             position: absolute;
             top: 0;
             right: 0;
+            display: block;
             color: #fff;
             font-size: 1.5rem;
             background-color: #40D4AB;
             @include border-radius(0.75rem 0.75rem 0 0);
+            @include opacity(0);
+            @include transition(opacity 0.3s);
             @include breakpoint(max-width 1199px) {
                 display: none;
             }
@@ -154,12 +163,17 @@ main {
                 width: 255px;
             }
         }
+        &:hover {
+            .tourism-txt {
+                @include opacity(1);
+            }
+        }
     }
     .county-tooltip {
         display: block;
         top: 50%;
         right: 0;
-        background-color: rgba(#fff, 0.9);
+        background-color: rgba(#fff, 0.95);
         @include border-radius(20px);
         @include box-shadow(10px 10px 20px rgba(#000, 0.1));
         @include translateY(-50%);

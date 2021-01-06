@@ -1903,6 +1903,11 @@ header ul li a {
   color: #fff;
   font-size: 1rem;
 }
+@media (min-width: 768px) {
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+}
 header .hamburger {
   position: absolute;
   top: 50%;
@@ -2073,6 +2078,13 @@ footer .container {
     line-height: 2;
   }
 }
+footer .container a {
+  color: #808080;
+}
+footer .container a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 footer .container .sticker {
   font-size: 0;
 }
@@ -2189,6 +2201,38 @@ footer .container-fluid {
 }
 .accordion .accordion-item .accordion-body {
   display: none;
+}
+.accordion .accordion-item .accordion-body .accordion-description {
+  margin: 20px 30px;
+  padding: 0 20px 0 0;
+  height: 150px;
+  overflow: hidden scroll;
+}
+.accordion .accordion-item .accordion-body .accordion-description::-webkit-scrollbar-track {
+  background-color: #EEDEBD;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.accordion .accordion-item .accordion-body .accordion-description::-webkit-scrollbar {
+  width: 8px;
+  background-color: #EEDEBD;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.accordion .accordion-item .accordion-body .accordion-description::-webkit-scrollbar-thumb {
+  background-color: #CEAD69;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.accordion .accordion-item .accordion-body .accordion-description a {
+  color: #CEAD69;
+}
+.accordion .accordion-item .accordion-body .accordion-description a:hover {
+  color: #c8a256;
+  text-decoration: underline;
 }
 .accordion .accordion-item .accordion-body ul {
   margin: 20px 30px;
@@ -2376,6 +2420,9 @@ main #map svg path {
 main #map svg path.active {
   fill: #40D4AB;
 }
+main #map svg path:nth-child(1), main #map svg path:nth-child(2), main #map svg path:nth-child(3) {
+  stroke-width: 0;
+}
 @media (min-width: 768px) {
   main .right-column {
     width: 185px;
@@ -2389,6 +2436,7 @@ main #map svg path.active {
 }
 main .tourism-bureau {
   position: relative;
+  display: block;
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
 }
@@ -2399,12 +2447,19 @@ main .tourism-bureau .tourism-txt {
   position: absolute;
   top: 0;
   right: 0;
+  display: block;
   color: #fff;
   font-size: 1.5rem;
   background-color: #40D4AB;
   -moz-border-radius: 0.75rem 0.75rem 0 0;
   -webkit-border-radius: 0.75rem;
   border-radius: 0.75rem 0.75rem 0 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 @media (max-width: 1199px) {
   main .tourism-bureau .tourism-txt {
@@ -2438,11 +2493,15 @@ main .tourism-bureau img {
     width: 255px;
   }
 }
+main .tourism-bureau:hover .tourism-txt {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
 main .county-tooltip {
   display: block;
   top: 50%;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
