@@ -27,6 +27,7 @@ $(function () {
 		.attr("width", width)
 		.attr("height", height);
 	var div = d3.select("#tooltip").style("display", 'none');
+	var divname = d3.select("#tooltip-name").style("display", 'none');
 	d3.queue()
 		.defer(d3.json, "assets/js/tw-county-topo.json")
 		.defer(d3.json, "assets/js/data.json")
@@ -65,7 +66,9 @@ $(function () {
 			.append("path")
 			.attr("class", "county")
 			.attr("d", path)
-			.on("click", enterCountry);
+			.on("click", enterCountry)
+			.on('mousemove', overCountry)
+			.on('mouseout', outCountry);
 		if (check) {
 			g_feature.attr(
 				"transform",
@@ -133,6 +136,22 @@ $(function () {
 				d3.selectAll(".county").classed("active", false);
 		    });
 			accordion();
+		}
+		function overCountry(d) {
+            var mouse = d3.mouse(svg.node()).map(function(d) {
+                return parseInt(d);
+            });
+			d3.selectAll(".county").classed("focus", false);
+			d3.select(this).classed("focus", true);
+			divname.classed(d.properties.nameeng, true)
+				.classed('hidden', false)
+				.attr('style', 'left:' + (mouse[0] - 112 - 15) + 'px; top:' + (mouse[1] - 44 - 35) + 'px')
+				.html(d.properties.name);
+		}
+		function outCountry(d) {
+			d3.selectAll(".county").classed("focus", false);
+			divname.classed(d.properties.nameeng, false)
+				.classed('hidden', true);
 		}
 	}
 });

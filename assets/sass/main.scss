@@ -81,6 +81,7 @@ main {
         }
     }
     #map {
+        position: relative;
         @include breakpoint(768px) {
             width: calc(100% - 185px);
         }
@@ -97,6 +98,9 @@ main {
                 stroke: #fff;
                 stroke-width: 1.25;
                 &.active {
+                    fill: #40D4AB;
+                }
+                &.focus {
                     fill: #40D4AB;
                 }
                 &:nth-child(1), 
@@ -166,6 +170,41 @@ main {
         &:hover {
             .tourism-txt {
                 @include opacity(1);
+            }
+        }
+    }
+    .county-name-tooltip {
+        position: absolute;
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1;
+        word-break: keep-all;
+        background-color: #40D4AB;
+        @include border-radius(0.75rem 0.75rem 0 0.75rem);
+        @include transition(top 0.5s, left 0.5s);
+        &::before {
+            @include beforeafter('', block);
+            position: absolute;
+            right: 0;
+            bottom: -7px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 7px 12.1px 7px 0;
+            border-color: transparent #40D4AB transparent transparent;
+        }
+        &.hidden {
+            display: none;
+        }
+        &.hualien, &.yilan, &.taitung {
+            @include translateX(150%);
+            &::before {
+                left: 0;
+                right: auto;
+                border-width: 7px 0 7px 12.1px;
+                border-color: transparent transparent transparent #40D4AB;
             }
         }
     }

@@ -9,7 +9,10 @@
           "arcs": [[[9]], [[10]], [[11]], [[12]], [[13]]],
           "id": "09007",
           "properties": {
-            "name": "連江縣"
+            "name": "連江縣",
+            "nameeng": "lienchiang",
+            "top": 6,
+            "left": 0
           }
         },
         {
@@ -34,7 +37,10 @@
           ],
           "id": "09020",
           "properties": {
-            "name": "金門縣"
+            "name": "金門縣",
+            "nameeng": "Kinmen",
+            "top": 24,
+            "left": 0
           }
         },
         {
@@ -86,15 +92,21 @@
           ],
           "id": "10016",
           "properties": {
-            "name": "澎湖縣"
+            "name": "澎湖縣",
+            "nameeng": "penghu",
+            "top": 42,
+            "left": 0
           }
         },
         {
           "type": "MultiPolygon",
-          "arcs": [[[0, 1, 2, 3, 4, 5, 6], [7]], [[8]]],
+          "arcs": [[[0, 1, 2, 3, 4, 5, 6]]],
           "id": "64000",
           "properties": {
-            "name": "高雄市"
+            "name": "高雄市",
+            "nameeng": "kaohsiung",
+            "top": 68,
+            "left": 16
           }
         },
         {
@@ -102,7 +114,10 @@
           "arcs": [[[44, 45, 46, 47, 48, 49]], [[50]]],
           "id": "10002",
           "properties": {
-            "name": "宜蘭縣"
+            "name": "宜蘭縣",
+            "nameeng": "yilan",
+            "top": 18,
+            "left": 71
           }
         },
         {
@@ -110,7 +125,10 @@
           "arcs": [[[51, 52, 53, -45, 54, 55]]],
           "id": "10004",
           "properties": {
-            "name": "新竹縣"
+            "name": "新竹縣",
+            "nameeng": "hsinchu-county",
+            "top": 14,
+            "left": 34.5
           }
         },
         {
@@ -118,7 +136,10 @@
           "arcs": [[[56, 57, 58, -56]]],
           "id": "10005",
           "properties": {
-            "name": "苗栗縣"
+            "name": "苗栗縣",
+            "nameeng": "miaoli",
+            "top": 21,
+            "left": 29
           }
         },
         {
@@ -126,7 +147,10 @@
           "arcs": [[[59, 60, 61, 62]]],
           "id": "10007",
           "properties": {
-            "name": "彰化縣"
+            "name": "彰化縣",
+            "nameeng": "Changhua",
+            "top": 35,
+            "left": 19
           }
         },
         {
@@ -134,7 +158,10 @@
           "arcs": [[[63, -2, 64, 65, -63, 66]]],
           "id": "10008",
           "properties": {
-            "name": "南投縣"
+            "name": "南投縣",
+            "nameeng": "nantou",
+            "top": 40,
+            "left": 35
           }
         },
         {
@@ -151,7 +178,10 @@
           ],
           "id": "10009",
           "properties": {
-            "name": "雲林縣"
+            "name": "雲林縣",
+            "nameeng": "yunlin",
+            "top": 44,
+            "left": 14
           }
         },
         {
@@ -159,7 +189,10 @@
           "arcs": [[[76, -69, -65, -1, 77], [78]], [[79]]],
           "id": "10010",
           "properties": {
-            "name": "嘉義縣"
+            "name": "嘉義縣",
+            "nameeng": "chiayi-county",
+            "top": 50,
+            "left": 14
           }
         },
         {
@@ -167,7 +200,10 @@
           "arcs": [[[80, -5, 81]], [[82]]],
           "id": "10013",
           "properties": {
-            "name": "屏東縣"
+            "name": "屏東縣",
+            "nameeng": "pingtung",
+            "top": 82,
+            "left": 27
           }
         },
         {
@@ -184,7 +220,10 @@
           ],
           "id": "10014",
           "properties": {
-            "name": "台東縣"
+            "name": "台東縣",
+            "nameeng": "taitung",
+            "top": 67,
+            "left": 57
           }
         },
         {
@@ -192,7 +231,10 @@
           "arcs": [[[-84, -3, -64, 92, -49, 93]]],
           "id": "10015",
           "properties": {
-            "name": "花蓮縣"
+            "name": "花蓮縣",
+            "nameeng": "hualien",
+            "top": 43,
+            "left": 64
           }
         },
         {
@@ -200,15 +242,21 @@
           "arcs": [[[137, 138]]],
           "id": "10017",
           "properties": {
-            "name": "基隆市"
+            "name": "基隆市",
+            "nameeng": "keelung",
+            "top": 7,
+            "left": 53
           }
         },
         {
           "type": "MultiPolygon",
-          "arcs": [[[-59, 139, -52], [140]]],
+          "arcs": [[[-59, 139, -52]]],
           "id": "10018",
           "properties": {
-            "name": "新竹市"
+            "name": "新竹市",
+            "nameeng": "hsinchu-city",
+            "top": 16,
+            "left": 33
           }
         },
         {
@@ -216,7 +264,10 @@
           "arcs": [[[-79]]],
           "id": "10020",
           "properties": {
-            "name": "嘉義市"
+            "name": "嘉義市",
+            "nameeng": "chiayi-city",
+            "top": 47,
+            "left": 22
           }
         },
         {
@@ -224,7 +275,10 @@
           "arcs": [[[141]]],
           "id": "63000",
           "properties": {
-            "name": "台北市"
+            "name": "台北市",
+            "nameeng": "taipei",
+            "top": 7,
+            "left": 48
           }
         },
         {
@@ -232,15 +286,21 @@
           "arcs": [[[-138, 142, -47, 143, 144], [145], [146], [-142]]],
           "id": "65000",
           "properties": {
-            "name": "新北市"
+            "name": "新北市",
+            "nameeng": "new-taipei",
+            "top": 7,
+            "left": 45
           }
         },
         {
           "type": "MultiPolygon",
-          "arcs": [[[-62, 147, -57, -55, -50, -93, -67], [148]]],
+          "arcs": [[[-62, 147, -57, -55, -50, -93, -67]]],
           "id": "66000",
           "properties": {
-            "name": "台中市"
+            "name": "台中市",
+            "nameeng": "taichung",
+            "top": 27,
+            "left": 23
           }
         },
         {
@@ -248,7 +308,10 @@
           "arcs": [[[149, -78, -7]]],
           "id": "67000",
           "properties": {
-            "name": "台南市"
+            "name": "台南市",
+            "nameeng": "tainan",
+            "top": 56,
+            "left": 12
           }
         },
         {
@@ -267,7 +330,10 @@
           ],
           "id": "68000",
           "properties": {
-            "name": "桃園市"
+            "name": "桃園市",
+            "nameeng": "taoyuan",
+            "top": 9,
+            "left": 39
           }
         }
       ]
