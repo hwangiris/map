@@ -2396,10 +2396,6 @@ main form button[type='submit'] {
   background-color: transparent;
   border-width: 0;
 }
-main #map {
-  position: relative;
-  z-index: 2;
-}
 @media (min-width: 768px) {
   main #map {
     width: calc(100% - 185px);
@@ -2407,7 +2403,9 @@ main #map {
 }
 @media (min-width: 1200px) {
   main #map {
+    position: relative;
     width: 50%;
+    z-index: 2;
   }
 }
 @media (max-width: 767px) {

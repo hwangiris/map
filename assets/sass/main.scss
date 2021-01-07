@@ -81,13 +81,13 @@ main {
         }
     }
     #map {
-        position: relative;
-        z-index: 2;
         @include breakpoint(768px) {
             width: calc(100% - 185px);
         }
         @include breakpoint(1200px) {
+            position: relative;
             width: 50%;
+            z-index: 2;
         }
         @include breakpoint(max-width 767px) {
             margin-left: -20px;
