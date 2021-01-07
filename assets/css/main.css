@@ -2419,14 +2419,19 @@ main #map svg path {
   stroke: #fff;
   stroke-width: 1.25;
 }
-main #map svg path.active {
+main #map svg path.active, main #map svg path.focus {
   fill: #40D4AB;
 }
-main #map svg path.focus {
-  fill: #40D4AB;
-}
-main #map svg path:nth-child(1), main #map svg path:nth-child(2), main #map svg path:nth-child(3) {
+main #map svg path:nth-child(2), main #map svg path:nth-child(3) {
   stroke-width: 0;
+}
+main #map svg path:nth-child(1) {
+  stroke-width: 3px;
+  stroke: #C8D9E8;
+  stroke-linejoin: round;
+}
+main #map svg path:nth-child(1).active, main #map svg path:nth-child(1).focus {
+  stroke: #40D4AB;
 }
 @media (min-width: 768px) {
   main .right-column {
