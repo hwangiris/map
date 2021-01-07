@@ -1,6 +1,5 @@
+var width = document.body.clientWidth;
 $(function () {
-    var width = document.body.clientWidth;
-    var height = document.body.clientHeight;
 	if (width < 768) {
         $('nav').hide();
     }
@@ -10,6 +9,20 @@ $(function () {
     });
 });
 
+function openShare() {
+    if ( width <= 1024 ) {
+        $('.county-share > span').click(function(){
+            $('.share-wrapper').fadeIn();
+        })
+    }
+}
+function closeShare() {
+    if ( width <= 1024 ) {
+        $('.county-share-close').click(function(){
+            $('.share-wrapper').fadeOut();
+        })
+    }
+}
 function accordion() {
     $('.accordion-item').each(function(){
         $(this).children('.accordion-head').click(function(){

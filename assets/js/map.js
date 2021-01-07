@@ -135,16 +135,25 @@ $(function () {
 			div.html(
 				"<div class='county-tooltip-head px20'>" +
 				"<div class='county-name'>" + filtered_country_name[0].properties.name + "</div>" +
-				"<div class='county-second'><a class='county-share' target='_blank'>立即分享<img src='assets/images/share.svg' alt='share'></a>" +
+				"<div class='county-second'><div class='county-share'><span>立即分享<img src='assets/images/share.svg' alt='share'></span>" +
+				"<div class='share-wrapper'><div id='county-share-close' class='county-share-close icon-close'></div><ul>" +
+				"<li><a href='https://www.facebook.com/sharer/sharer.php?u=網址' target='_blank' rel='noopener noreferrer' class='facebook'><img src='assets/images/share-facebook.png' alt='facebook'></a></li>" +
+				"<li><a href='https://twitter.com/share?url=網址' target='_blank' rel='noopener noreferrer' class='twitter'><img src='assets/images/share-twitter.png' alt='twitter'></a></li>" +
+				"<li><a href='javascript:void(window.open(\"http://www.plurk.com/?qualifier=shares&status=\".concat(encodeURIComponent(網址)).concat(\" \").concat(\"(\").concat(encodeURIComponent(標題)).concat(\")\")));' target='_blank' rel='noopener noreferrer' class='plurk'><img src='assets/images/share-plurk.png' alt='plurk'></a></li>" +
+				"<li><a href='https://line.naver.jp/R/msg/text/?網址' target='_blank' rel='noopener noreferrer' class='line'><img src='assets/images/share-line.png' alt='line'></a></li>" +
+				"</ul></div></div>" +
 				"<div id='county-tooltip-close' class='county-tooltip-close icon-close'></div>" +
 				"</div></div>" +
-				"<div class='county-tooltip-video'><div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div>" +
+				"<div class='county-tooltip-video'>" +
+				"<div class='embed-responsive embed-responsive-16by9'>" + filtered_country[0].visual + "</div>" +
 				"<div class='county-tooltip-accordion accordion'>" + videoDescription + newslist + "</div>"
 			);
 		    $('#county-tooltip-close').click(function(){
 		        $('#tooltip').hide().html('');
 				d3.selectAll(".county").classed("active", false);
-		    });
+			});
+			openShare();
+			closeShare();
 			accordion();
 		}
 		function overCountry(d) {

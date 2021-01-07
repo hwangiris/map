@@ -2601,6 +2601,9 @@ main .county-tooltip .county-tooltip-head .county-second {
   align-items: center;
 }
 main .county-tooltip .county-tooltip-head .county-share {
+  position: relative;
+}
+main .county-tooltip .county-tooltip-head .county-share > span {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -2611,12 +2614,92 @@ main .county-tooltip .county-tooltip-head .county-share {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
+  cursor: pointer;
 }
-main .county-tooltip .county-tooltip-head .county-share img {
+main .county-tooltip .county-tooltip-head .county-share > span > img {
   margin-left: 0.25rem;
   height: 1.125rem;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper {
+  display: none;
+  cursor: auto;
+  z-index: 10;
+}
+@media (min-width: 1024px) {
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding-top: 10px;
+    width: 205px;
+  }
+}
+@media (max-width: 1023px) {
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper.show {
+    display: block;
+  }
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper .county-share-close {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  background-color: #CEAD69;
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper .county-share-close:before, main .county-tooltip .county-tooltip-head .county-share .share-wrapper .county-share-close:after {
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper .county-share-close {
+    display: none;
+  }
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul {
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 1023px) {
+  main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul li {
+  display: inline-block;
+  margin: 5px;
+  background-color: #fff;
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul li a {
+  display: block;
+}
+main .county-tooltip .county-tooltip-head .county-share .share-wrapper ul li a img {
+  display: block;
+  height: 36px;
+}
+@media (min-width: 1024px) {
+  main .county-tooltip .county-tooltip-head .county-share:hover .share-wrapper {
+    display: block;
+  }
 }
 main .county-tooltip .county-tooltip-head .county-tooltip-close {
   background-color: #E2E2E2;
