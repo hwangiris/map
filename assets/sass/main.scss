@@ -30,13 +30,13 @@ main {
         padding-left: 0.4em;
         padding-bottom: 0.5rem;
         color: #CEAD69;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         text-align: center;
         letter-spacing: 0.4em;
         line-height: 1.25;
         @include breakpoint(1024px) {
             padding-bottom: 1rem;
-            font-size: 3rem;
+            font-size: 2.25rem;
         }
         &::before {
             @include beforeafter('', block);
@@ -102,11 +102,9 @@ main {
                 &.focus {
                     fill: #40D4AB;
                 }
+                &:nth-child(1),
                 &:nth-child(2), 
                 &:nth-child(3) {
-                    stroke-width: 0;
-                }
-                &:nth-child(1) {
                     stroke-width: 3px;
                     stroke: #C8D9E8;
                     stroke-linejoin: round;
@@ -164,21 +162,54 @@ main {
                 background-color: darken(#40D4AB, 5%);
             }
         }
-        img {
-            display: block;
-            margin-top: 30px;
+        .img {
+            position: relative;
+            display: table;
             margin-left: auto;
             margin-right: auto;
-            width: 185px;
-            @include breakpoint(1200px) {
-                width: 255px;
+            img {
+                display: block;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 185px;
+                @include transition(opacity 0.3s);
+                @include breakpoint(1200px) {
+                    width: 255px;
+                }
+                &.default {
+                    @include opacity(0);
+                }
+                &.normal {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include opacity(1);
+                }
+                &.hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include opacity(0);
+                }
             }
         }
         &:hover {
             .tourism-txt {
                 @include opacity(1);
             }
-        }
+            .img {
+                position: relative;
+                img {
+                    &.normal {
+                        @include opacity(0);
+                    }
+                    &.hover {
+                        @include opacity(1);
+                    }
+                }
+            }
+            }
     }
     .county-name-tooltip {
         position: absolute;

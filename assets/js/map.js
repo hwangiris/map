@@ -76,6 +76,7 @@ $(function () {
 			.append("path")
 			.attr("class", "county")
 			.attr("d", path)
+			.attr("rx", "1")
 			.on("click", enterCountry)
 			.on('mousemove', overCountry)
 			.on('mouseout', outCountry);

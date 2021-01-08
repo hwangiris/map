@@ -25,12 +25,14 @@ header {
             @include border-radius(0 0 0.75rem 0.75rem);
             box-shadow: 10px 10px 40px rgba(#000, 0.05);
             @include breakpoint(1024px) {
-                padding: 1.5rem;
+                padding: 0.5rem 1rem;
             }
             img {
-                height: 35px;
+                @include breakpoint(max-width 767px) {
+                    height: 70px;
+                }
                 @include breakpoint(768px) {
-                    height: 45px;
+                    width: 365px;
                 }
             }
         }

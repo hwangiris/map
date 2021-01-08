@@ -1879,15 +1879,17 @@ header a.logo {
 }
 @media (min-width: 1024px) {
   header a.logo {
-    padding: 1.5rem;
+    padding: 0.5rem 1rem;
   }
 }
-header a.logo img {
-  height: 35px;
+@media (max-width: 767px) {
+  header a.logo img {
+    height: 70px;
+  }
 }
 @media (min-width: 768px) {
   header a.logo img {
-    height: 45px;
+    width: 365px;
   }
 }
 header ul {
@@ -2332,7 +2334,7 @@ main h1 {
   padding-left: 0.4em;
   padding-bottom: 0.5rem;
   color: #CEAD69;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0.4em;
   line-height: 1.25;
@@ -2340,7 +2342,7 @@ main h1 {
 @media (min-width: 1024px) {
   main h1 {
     padding-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 }
 main h1::before {
@@ -2422,15 +2424,12 @@ main #map svg path {
 main #map svg path.active, main #map svg path.focus {
   fill: #40D4AB;
 }
-main #map svg path:nth-child(2), main #map svg path:nth-child(3) {
-  stroke-width: 0;
-}
-main #map svg path:nth-child(1) {
+main #map svg path:nth-child(1), main #map svg path:nth-child(2), main #map svg path:nth-child(3) {
   stroke-width: 3px;
   stroke: #C8D9E8;
   stroke-linejoin: round;
 }
-main #map svg path:nth-child(1).active, main #map svg path:nth-child(1).focus {
+main #map svg path:nth-child(1).active, main #map svg path:nth-child(1).focus, main #map svg path:nth-child(2).active, main #map svg path:nth-child(2).focus, main #map svg path:nth-child(3).active, main #map svg path:nth-child(3).focus {
   stroke: #40D4AB;
 }
 @media (min-width: 768px) {
@@ -2491,19 +2490,58 @@ main .tourism-bureau .tourism-txt::before {
 main .tourism-bureau .tourism-txt:hover {
   background-color: #2ecca1;
 }
-main .tourism-bureau img {
+main .tourism-bureau .img {
+  position: relative;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .tourism-bureau .img img {
   display: block;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 185px;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 @media (min-width: 1200px) {
-  main .tourism-bureau img {
+  main .tourism-bureau .img img {
     width: 255px;
   }
 }
+main .tourism-bureau .img img.default {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+main .tourism-bureau .img img.normal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+main .tourism-bureau .img img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
 main .tourism-bureau:hover .tourism-txt {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+main .tourism-bureau:hover .img {
+  position: relative;
+}
+main .tourism-bureau:hover .img img.normal {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+main .tourism-bureau:hover .img img.hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
