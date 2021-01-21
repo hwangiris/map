@@ -10,6 +10,12 @@ header {
                 height: 60px;
             }
         }
+        &.container-md {
+            @media screen and (min-width: 1024px) and (max-width: 1199px) {
+                max-width: none;
+                width: 100%;
+            }
+        }
     }
     a {
         display: block;
@@ -29,9 +35,12 @@ header {
             }
             img {
                 @include breakpoint(max-width 767px) {
-                    height: 70px;
+                    height: 35px;
                 }
-                @include breakpoint(768px) {
+                @media screen and (max-width: 1023px) and (min-width: 768px) {
+                    height: 50px;
+                }
+                @include breakpoint(1024px) {
                     width: 365px;
                 }
             }
@@ -132,6 +141,7 @@ header {
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
+                    justify-content: flex-end;
                 }
                 li {
                     @media screen and (min-width: 768px) and (max-width: 1023px) {

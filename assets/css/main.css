@@ -1860,6 +1860,12 @@ header .container::after {
     height: 60px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  header .container.container-md {
+    max-width: none;
+    width: 100%;
+  }
+}
 header a {
   display: block;
 }
@@ -1884,10 +1890,15 @@ header a.logo {
 }
 @media (max-width: 767px) {
   header a.logo img {
-    height: 70px;
+    height: 35px;
   }
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header a.logo img {
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
   header a.logo img {
     width: 365px;
   }
@@ -2007,6 +2018,7 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-end;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
